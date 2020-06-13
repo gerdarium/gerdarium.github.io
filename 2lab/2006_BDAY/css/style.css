@@ -1,0 +1,250 @@
+body{
+	background: url(../gallery/30.jpg) no-repeat center center fixed;
+	background-size: cover;
+}
+
+nav {
+margin: 10px;
+background-color: #1A1A1A;
+margin-left:30%;
+margin-right:30%;
+opacity: 0.9;
+box-shadow: 20px 20px 10px #000000;
+}
+
+nav ul {
+padding:0;
+margin:0;
+position: relative
+}
+
+nav ul li {
+display:inline-block;
+background-color: #1A1A1A;
+}
+
+nav ul ul {
+display: none;
+position: absolute;
+background-color: #1A1A1A;
+top: 100%;
+}
+
+nav a {
+display:block;
+padding:0 10px;
+color:white;
+font-weight: 700;
+font-size:18px;
+line-height: 60px;
+text-decoration:none;
+}
+
+nav a.dop:hover {
+margin: 3px;
+background-color: #484848;
+}
+
+nav a:hover {
+background-color: #484848;
+}
+
+nav ul li:hover > ul {
+display:inherit;
+}
+nav ul ul li {
+display:list-item;
+position: relative;
+}
+
+hr{
+	background-color: #1A1A1A;
+	margin-left:15%;
+	margin-right:15%;
+}
+
+@font-face {
+    font-family: font1; 
+    src: url("../fonts/1.ttf"); 
+}
+@font-face {
+    font-family: font2; 
+    src: url("../fonts/2.ttf"); 
+}
+
+div.text{
+	font-family:font1;
+	text-indent:20px;
+	letter-spacing: normal;
+	text-transform: none;
+	text-align: justify;
+	line-height: 110%;
+	color: black;
+	font-size:20px;
+	margin-left:15%;
+	margin-right:15%;
+}
+
+div.zag{
+	font-family:font2;
+	color: black;
+	font-size:60px;
+	text-align:center;
+}
+
+.otstup{
+   margin-left:15%;
+   margin-right:15%;
+}
+
+.ss{
+	font-family: font2;
+}
+
+.up{
+	font-family: font2;
+	text-align: center;
+}
+
+.center{
+	text-align: center;
+}
+
+.photo:hover::after{
+	
+	content: attr(data-title);
+	position: absolute; 
+    left: 63.1%;
+	right: 16%;
+    background: linear-gradient(to left, #848484, #606060);
+    color: #FFFFFF;
+    text-align: center; 
+    font-family: Arial, sans-serif; 
+	font-weight:bold;
+    font-size: 60%;
+    padding: 5px 10px; 
+    border: 19px; 
+	
+}
+.ttr{
+  position: relative;
+  display:inline-block;
+  max-height:50%;
+  max-width:30%;
+	
+}
+.ttr .phtextr{
+  visibility: hidden;
+  width: 200px;
+  background: linear-gradient(to left, #848484, #606060);
+  border: 3px solid white;
+  color: black;
+  font-weight:bold;
+  text-align: center;
+  padding: 5px 0;
+  border-radius: 6px;
+  position: absolute;
+  top:25px;
+  left: 105%;
+}
+
+.ttr .phtextr::after {
+  content: " ";
+  position: absolute;
+  top: 30%;
+  right: 100%; 
+  margin-top: 7px;
+  border-width: 7px;
+  border-style: solid;
+  border-color: transparent white transparent transparent;
+
+}
+
+.ttr:hover .phtextr{
+visibility: visible;
+}
+
+.tip {
+    position: relative;
+	color:white;
+	font-style:areal;
+    display: inline-block;
+	
+}
+.tip .tiptext::after {
+    content: " ";
+    position: absolute;
+    bottom: 100%; 
+    left: 50%;
+    margin-left: -5px;
+    border-width: 8px;
+    border-style: solid;
+    border-color: transparent transparent white transparent;
+}
+.tip .tiptext {
+    visibility: hidden;
+    width: 200px;
+    background: radial-gradient(30% 50%,#848484, #606060);
+	border: 3px solid white;
+    color: black;
+    text-align: center;
+    padding: 5px;
+    border-radius: 15px;
+	margin-left: -170px;
+	margin-top: 24px;
+    position: absolute;
+}
+.tip:hover .tiptext {
+    visibility: visible;
+}
+
+#gallery {
+  text-align: center;
+  width: 1000px;
+  margin: 70px auto;
+}
+
+#gallery img {
+  width: 300px;
+  transition-duration: 0.6s;
+  opacity: 0.6;
+  z-index: 1;
+  margin: 0;
+  position: relative;
+}
+
+#gallery img:hover {
+  transform: scale( 1.5 );
+  box-shadow: 0px 0px 25px gray;
+  opacity: 1;
+  z-index: 10;
+}
+ 
+.container{
+	font-family:font1;
+	text-indent:20px;
+	letter-spacing: normal;
+	text-transform: none;
+	text-align: justify;
+	line-height: 110%;
+	color: black;
+	font-size:20px;
+	margin-left:15%;
+	margin-right:15%;
+	display:flex;
+	align-items: flex-start;
+	flex-direction:column;
+}
+
+.container div{
+	padding: 10px;
+}
+
+.box-1{
+	order: 1;
+}
+
+.box-2{
+	order: 2;
+}
+
