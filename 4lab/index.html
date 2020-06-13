@@ -1,0 +1,27 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Страны</title>
+    <link href="https://fonts.googleapis.com/css?family=Miss+Fajardose|Oswald" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="CSS/style.css">
+	<link rel="icon" href="image/countries1.ico" type="image/x-icon">
+</head>
+<body>
+    <div id="body"></div>
+    <div class="time">До начала 2020-2021 учебного года осталось:</div>
+	<div class="time" id="clock"></div>
+	<p>1-Сортировать от А до Я, 0-Сортировать от Я до А</p>
+		 <input id="first_name" value="0" type="text"></input>
+		 <input id="button" type="button" value="Сортировать" onclick="obj2.changeCountries(document.getElementById('first_name').value);	
+						 obj1.outContries.call(obj2,about); "></input>
+	<div id="tabl"></div>
+    <script src="JS/countries.js"></script>
+    <script src="JS/script.js"></script>
+	<script src="JS/time.js"></script>
+</body>
+</html>

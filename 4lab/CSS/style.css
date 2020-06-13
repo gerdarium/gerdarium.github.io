@@ -1,0 +1,41 @@
+body{
+    font-family: Times New Roman;
+    width: 100%;
+    background-color:#0AABCB ;
+}
+
+
+h1,b{
+	color:#4D4949;
+}
+.time{
+	Background-color:#A7A7B8;
+	color:#1714DC;
+	text-align:center;
+	font-weight:solid;
+}
+table{
+	margin-left:30%;
+    width: 40% !important;
+    color: #1714DC!important;
+    background-color: #E6E6FA;
+}
+td{
+    width: 50%;
+}
+tr{
+    transition: 0.5s;
+	
+}
+tr:hover{
+    background-color: #FA8072;
+}
+
+.bg{
+	
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+}
